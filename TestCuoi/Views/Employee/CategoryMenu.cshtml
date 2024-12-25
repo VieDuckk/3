@@ -1,0 +1,7 @@
+﻿@model IEnumerable<TestCuoi.Models.Department>
+
+@foreach (var item in Model)
+{
+    var url = "/NhanVienTheoPhong/" + item.deptid;
+    <a href="@url">@item.deptname</a><label>&nbsp;| &nbsp;</label>
+}
